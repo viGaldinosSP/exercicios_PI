@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+.header {
+    border-bottom: 2px solid hsl(188, 61%, 50%);
+    
+}
+.container {
+    color: hsl(188, 61%, 50%);
+    display: flex;
+    justify-content: space-between;
+}
+.container ul{
+    color: hsl(36, 70%, 64%);
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+}
+.header .container {
+    justify-content: space-around;
+    align-items: center;
+}
+ul a{
+    text-decoration: none;
+    color: hsl(36, 70%, 64%);
+}
+.agora{
+    font-weight: 600;
+}
+/* BANNER */
+
+.banner{
+    height: 500px;
+    background-image: url("bg-jelly-fish-para-home.png");
+    background-size: cover;
+    color: hsl(0, 0%, 100%);
+}
+
+.banner .container{
+    height: 500px;
+    align-items: center;
+}
+.banner p{
+    color: hsl(0, 0%, 100%);
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 280px;
+    margin-left: 350px;
+}
+.banner span{
+    font-weight: 800;
+}
+
+/* login */
+
+.banner .card {
+    background-color: hsl(60, 56%, 91%);
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+.banner .card1 {
+    background-color: hsl(60, 56%, 91%);
+    height: 550px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    
+}
+.card{
+    margin-top: 20px;
+
+}
+.btn{
+    font-family: monospace;
+    margin-top: 10px;
+    border: 0px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    background-color: hsl(358, 75%, 62%);
+    cursor: pointer;
+}
+input
+{
+    height: 30px;
+    border: 1px solid hsl(358, 75%, 62%);
+    border-radius: 4px;
+    padding: 5px;
+}
