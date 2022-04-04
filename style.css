@@ -1,0 +1,20 @@
+.h1-classe-esterna /* chave/seletora */{
+    color: /* propriedade*/ blue; /*Valor*/
+    background-color: red;
+    font-size: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    margin: 0;
+
+}
+
+.div-container {
+    background-color: red;
+    margin: 100px 100px ;
+    padding: 200px;
+    text-align: center;
+
+}

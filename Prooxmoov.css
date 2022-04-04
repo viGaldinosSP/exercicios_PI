@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+ 
+}
+.header{
+    border-bottom: 2px solid rgb(78, 185,152);
+    background-color: rgb(78, 185,152);
+    
+}
+.logo{
+    height: 100px;
+}
+.container{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.div_logo{
+    display: flex;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 600px;
+}
+.header .container{
+    justify-content: space-around;
+    align-items: center;
+}
+ul a{
+    color: white;
+    text-decoration: none;
+}
+.agora{
+    font-weight: 600;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url("HOME\ CORTE-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    margin: auto;
+}
+.banner .card{
+    margin-top: 100px;
+    background-color: rgb(78, 185, 152);
+    height: 350px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card_cadastro{
+    margin: auto;
+}
+.banner .card_cadastro{
+    margin-top: 25px;
+    background-color: rgb(78, 185, 152);
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border:2px solid rgba(0, 0, 0, 0.753);
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 4px;
+}
+.boas_vindas{
+    margin-bottom: 2px;
+    text-shadow: 
+    -1px -1px 0px rgba(0, 0, 0, 0.712), 
+    -1px 1px 0px rgba(0, 0, 0, 0.712),      
+     1px -1px 0px rgba(0, 0, 0, 0.712),    
+     1px 0px 0px rgba(0, 0, 0, 0.712);
+}
+h4{
+    text-shadow: 
+    -1px -1px 0px rgba(0, 0, 0, 0.712), 
+    -1px 1px 0px rgba(0, 0, 0, 0.712),      
+     1px -1px 0px rgba(0, 0, 0, 0.712),    
+     1px 0px 0px rgba(0, 0, 0, 0.712);
+}
+#simulador_resposta{
+    display: none;
+}
+#simulador{
+    display: flex;
+}
+.banner .simulador {
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 20px;
+    color: white;
+    
+    flex-direction: column;
+    height: 500px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 185, 151, 0.801);
+    border-radius: 10px;
+
+}
+.banner .simulador_resposta {
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 20px;
+    color: white;
+    
+    flex-direction: column;
+    height: 250px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(78, 185, 151, 0.801);
+    border-radius: 10px;
+
+}
+
+.btn{
+    font-family: monospace;
+    margin-top: 20px;
+    border: 2px solid hsl(191, 86%, 14%);
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 18px;
+    color:hsl(191, 86%, 14%);
+    padding: 10px 10px;
+    background-color: hsl(0, 0%, 100%) ;
+    cursor: pointer;
+    
+}
+

@@ -31,6 +31,18 @@ ul a{
 .agora{
     font-weight: 600;
 }
+.btn{
+    font-family: monospace;
+    margin-top: 10px;
+    border: 0px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    background-color: hsl(358, 75%, 62%);
+    cursor: pointer;
+}
 /* BANNER */
 
 .banner{
@@ -73,18 +85,6 @@ ul a{
 .card{
     margin-top: 20px;
 
-}
-.btn{
-    font-family: monospace;
-    margin-top: 10px;
-    border: 0px;
-    font-weight: 600;
-    border-radius: 4px;
-    font-size: 18px;
-    color: hsl(0, 0%, 100%);
-    padding: 10px 15px;
-    background-color: hsl(358, 75%, 62%);
-    cursor: pointer;
 }
 input
 {

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sprint</title>
+    <link rel="stylesheet" href="Prooxmoov.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="div_logo">
+        <img src="logo.png" alt="" class="logo">  
+        <h1>Proxmoove</h1>
+            </div>
+        <ul>
+            <li ><a href="TelaInicial.html">Home</a> </li>
+            <li><a href="#">Serviços</a> </li>
+            <li><a href="#">Quem somos</a> </li>
+            <li class="agora"><a href="#">Simulador Financeiro</a></li>
+            <li><a href="#">Contato</a> </li>
+            <li><a href="ProxCadastro.html">Cadastro</a> </li>
+            <li><a href="ProxLogin.html">Login</a> </li>
+        </ul>
+    </div>
+</div>
+  
+   <div class="banner">
+       <div class="container">
+           <div id="simulador" class="simulador">
+            <h1 >Simule seus ganhos.</h1>
+                
+                <h3>Insira a sua renda mensal:</h3> <input id="ipt_renda" type="text">
+           
+                <h3>Informe o número de corredores que seu comércio possui:</h3> <input id="ipt_corredor" type="text" >
+              
+                <h3>Informe o número de corredores que utilizarão os sensores:</h3>  <input id="ipt_sensor" type="text" > <br>
+               
+                <button class="btn" onclick="cal()">Clique aqui para calcular</button>
+            
+                <!-- <div id="msg" > -->
+
+                </div>
+
+            </div>
+            <div id="simulador_resposta" class="simulador_resposta">
+
+                 <div id="msg" ></div>
+
+                 <button class="btn" onclick="voltar()">Voltar</button>
+           
+            
+            </div>
+           
+           </div>
+        </div>
+
+    
+
+</body>
+</html>
+<script>
+    
+    function cal() {
+
+        var renda = ipt_renda.value;
+        var corredor = ipt_corredor.value;
+        var sensor = ipt_sensor.value;
+        var novarenda = Number(renda * 0.3) + Number(renda);
+        var cadacorredor = Number(renda / corredor);
+        var corredorsens = Number(novarenda / sensor);
+
+        if (renda == '' || corredor =='' || sensor == '') {
+           alert (`Insira um valor`) 
+           ipt_corredor.style.border = `2px solid #ff0000`
+           if (renda == '') {
+               ipt_renda.style.border = `2px solid #ff0000`
+           }else{
+            ipt_renda.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+           }
+           if (corredor == '') {
+               ipt_corredor.style.border = `2px solid #ff0000`
+           }else {
+            ipt_corredor.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+           }
+           if (sensor == '') {
+               ipt_sensor.style.border = `2px solid #ff0000`
+           }else {
+            ipt_sensor.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+           }
+        }else{
+            simulador.style.display = `none`
+            simulador_resposta.style.display = `flex`
+            msg.innerHTML = `Sua renda mensal utilizando nossos serviços será de: <b style="color: rgb(141, 192, 65);">R$ ${novarenda.toFixed(2)}</b> <br>
+         Sua renda dividida entre os corredores sem o uso dos sensores é de: <b style="color: rgb(206, 177, 47);">R$ ${cadacorredor.toFixed(2)} </b> <br>
+         O valor gerado pelos corredores que estão com sensores é de <b style="color: rgb(206, 177, 47);">R$ ${corredorsens.toFixed(2)} </b> <br>
+         Seu comércio irá gerar <b style="color: green;">R$ ${novarenda.toFixed(2)}</b> por mês.<br>
+         Seu comércio irá gerar <b style="color: green;">R$ ${(novarenda * 6).toFixed(2)}</b> em seis meses.<br>
+         Seu comércio irá gerar <b style="color: green;">R$ ${(novarenda * 12).toFixed(2)}</b> em um ano. <br>`
+        }
+    }
+    function voltar(params) {
+        simulador.style.display = `flex`
+        simulador_resposta.style.display = `none`
+        ipt_corredor.value = ''
+        ipt_renda.value = ''
+        ipt_sensor.value = ''
+        ipt_renda.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+        ipt_corredor.style.border = `2px solid rgba(0, 0, 0, 0.753)` 
+        ipt_sensor.style.border = `2px solid rgba(0, 0, 0, 0.753)`
+    }
+</script>
